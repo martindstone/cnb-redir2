@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Success Page</title>
+  <style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+        text-align: center;
+        background-color: #f0f0f0;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .success-icon {
+        width: 100px;
+        height: 100px;
+    }
+    h1 {
+        font-size: 3rem;
+        margin-top: 1rem;
+    }
+    p {
+        font-size: 1.5rem;
+        margin-top: 0.5rem;
+    }
+</style>
+</head>
+<body>
+  <div class="container">
+    <svg class="success-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M9 11l3 3L22 4"></path>
+        <path d="M21 12a9 9 0 1 1-8-8"></path>
+    </svg>
+    <h1>Success</h1>
+    <p>Thank you for submitting the form</p>
+  </div>
+<script>
+  setTimeout(() => {
+    window.location.href = 'https://cnb-enterprise.pushbot.com/form/maintenance-window-schedule'
+      + '?ref-success=https://martindstone.github.io/cnb-redir2/success.html'
+      + '&ref-error=https://martindstone.github.io/cnb-redir2/failure.html';
+  }, 3000);
+</script>
+</body>
+</html>

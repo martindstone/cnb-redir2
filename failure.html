@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Success Page</title>
+  <style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+        text-align: center;
+        background-color: #f0f0f0;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .failure-icon {
+        width: 100px;
+        height: 100px;
+    }
+    h1 {
+        font-size: 3rem;
+        margin-top: 1rem;
+    }
+    p {
+        font-size: 1.5rem;
+        margin-top: 0.5rem;
+    }
+</style>
+</head>
+<body>
+  <div class="container">
+    <svg class="failure-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="10"></circle>
+      <line x1="15" y1="9" x2="9" y2="15"></line>
+      <line x1="9" y1="9" x2="15" y2="15"></line>
+    </svg>
+    <h1>Failed</h1>
+    <p>An unknown error occurred. Please try again.</p>
+  </div>
+<script>
+  setTimeout(() => {
+    window.location.href = 'https://cnb-enterprise.pushbot.com/form/maintenance-window-schedule'
+      + '?ref-success=https://martindstone.github.io/cnb-redir2/success.html'
+      + '&ref-error=https://martindstone.github.io/cnb-redir2/failure.html';
+  }, 3000);
+</script>
+</body>
+</html>
